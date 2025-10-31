@@ -115,6 +115,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <GoogleAnalytics gaId="G-PFFTKV3Y6S" />
       </body>
     </html>
   );
