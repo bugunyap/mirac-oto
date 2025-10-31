@@ -1,5 +1,5 @@
 import { navItems, services } from "@/helpers/helpers";
-import { Car, Instagram, MapPin, Phone } from "lucide-react";
+import { Car, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -16,7 +16,7 @@ function Footer() {
                 <Car className="w-8 h-8 text-white" />
               </div> */}
               <Image
-                src={"/logo.png"}
+                src={"/logo-white.png"}
                 width={60}
                 height={60}
                 alt="Logo"
@@ -24,13 +24,23 @@ function Footer() {
               />
               <div>
                 <div className="font-bold text-xl text-white">Miraç Oto</div>
-                <div className="text-sm text-blue-400">Özel Servis</div>
+                <div className="text-sm text-white">Özel Servis</div>
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed">
               VAG grubu araçlarınız için güvenilir ve profesyonel servis
               hizmeti.
             </p>
+            <div className="flex items-start mt-2">
+              <Instagram className="w-5 h-5 mr-2 mt-1 text-gray-100" />
+              <a
+                href="https://www.instagram.com/miracozelservis/"
+                target="_blank"
+                className="hover:text-red-400 transition"
+              >
+                @miracozelservis
+              </a>
+            </div>
           </div>
 
           <div>
@@ -40,7 +50,7 @@ function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="hover:text-blue-400 transition"
+                    className="hover:text-red-400 transition"
                   >
                     {item.title}
                   </Link>
@@ -55,8 +65,8 @@ function Footer() {
               {services(null, null, null, null, null, null).map((item) => (
                 <li key={item.title}>
                   <Link
-                    href="/hizmetler"
-                    className="hover:text-blue-400 transition"
+                    href={item.link}
+                    className="hover:text-red-400 transition"
                   >
                     {item.title}
                   </Link>
@@ -69,7 +79,7 @@ function Footer() {
             <h3 className="text-white font-bold text-lg mb-4">İletişim</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin className="w-9 h-9 mr-2 mt-1 text-blue-400" />
+                <MapPin className="w-9 h-9 mr-2 mt-1 text-gray-100" />
                 <address className="not-italic text-white leading-relaxed">
                   Hacı İshak Mahallesi,
                   <br />
@@ -79,46 +89,46 @@ function Footer() {
                 </address>
               </li>
               <li className="flex items-start">
-                <Phone className="w-5 h-5 mr-2 mt-1 text-blue-400" />
+                <Phone className="w-5 h-5 mr-2 mt-1 text-gray-100" />
                 <div>
                   <a
                     href="tel:+905359898350"
-                    className="block hover:text-blue-400 transition"
+                    className="block hover:text-red-400 transition"
                   >
                     0535 989 8350
                   </a>
                 </div>
               </li>
               <li className="flex items-start">
-                <Phone className="w-5 h-5 mr-2 mt-1 text-blue-400" />
+                <Phone className="w-5 h-5 mr-2 mt-1 text-gray-100" />
                 <div>
                   <a
                     href="tel:+905072964042"
-                    className="block hover:text-blue-400 transition"
+                    className="block hover:text-red-400 transition"
                   >
                     0507 296 4042
                   </a>
                 </div>
               </li>
               <li className="flex items-start">
-                <Phone className="w-5 h-5 mr-2 mt-1 text-blue-400" />
+                <Phone className="w-5 h-5 mr-2 mt-1 text-gray-100" />
                 <div>
                   <a
                     href="tel:+905053994619"
-                    className="block hover:text-blue-400 transition"
+                    className="block hover:text-red-400 transition"
                   >
                     0505 399 4619
                   </a>
                 </div>
               </li>
               <li className="flex items-start">
-                <Instagram className="w-5 h-5 mr-2 mt-1 text-blue-400" />
+                <Mail className="w-5 h-5 mr-2 mt-1 text-gray-100" />
                 <a
-                  href="https://www.instagram.com/miracozelservis/"
+                  href="mailto:yunusemreklnc5@gmail.com"
                   target="_blank"
-                  className="hover:text-blue-400 transition"
+                  className="hover:text-red-400 transition"
                 >
-                  @miracozelservis
+                  yunusemreklnc5@gmail.com
                 </a>
               </li>
             </ul>
@@ -133,13 +143,13 @@ function Footer() {
             <div className="flex space-x-6">
               <Link
                 href="gizlilik-politikasi"
-                className="text-gray-400 hover:text-blue-400 transition"
+                className="text-gray-400 hover:text-red-400 transition"
               >
                 Gizlilik Politikası
               </Link>
               <Link
                 href="kullanim-sartlari"
-                className="text-gray-400 hover:text-blue-400 transition"
+                className="text-gray-400 hover:text-red-400 transition"
               >
                 Kullanım Şartları
               </Link>

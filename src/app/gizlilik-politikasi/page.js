@@ -1,7 +1,7 @@
 import React from "react";
 
 export const metadata = {
-  title: "Gizlilik Politikası - Miraç Oto",
+  title: "Akhisar Oto Tamircisi - Gizlilik Politikası - Miraç Oto",
   description:
     "Miraç Oto gizlilik politikası. Akhisar / Manisa, Türkiye Tel: 0535 989 8350, 0507 296 4042, 0505 399 4619.",
 };

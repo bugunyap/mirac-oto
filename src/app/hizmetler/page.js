@@ -1,17 +1,16 @@
 import React from "react";
 import Banner from "@/components/Banner/Banner";
 import CallToAction from "@/components/CallToAction/CallToAction";
-import FAQ from "@/components/FAQ/FAQ";
 import Services from "@/components/Services/Services";
 
 export const metadata = {
-  title: "Hizmetlerimiz - Miraç Oto",
+  title: "Akhisar Oto Tamircisi - Hizmetlerimiz - Miraç Oto",
   description:
-    "DSG şanzıman tamiri, motor revizyonu, kaporta-boya, VAG teşhis, yedek parça. Akhisar'da tüm VAG grubu araçlar için profesyonel servis hizmetleri.",
+    "Akhisar DSG şanzıman tamiri, motor revizyonu, kaporta-boya, VAG teşhis, yedek parça. Akhisar'da tüm VAG grubu araçlar için profesyonel servis hizmetleri.",
   keywords:
     "akhisar dsg tamiri, akhisar motor tamiri, akhisar kaporta, akhisar şanzıman tamiri, akhisar vag teşhis, vcds akhisar, odis teşhis akhisar, volkswagen bakımı akhisar, audi bakımı akhisar, seat servisi akhisar, skoda servisi akhisar, akhisar oto elektrik",
   openGraph: {
-    title: "Hizmetlerimiz - Miraç Oto",
+    title: "Akhisar Oto Tamircisi - Hizmetlerimiz - Miraç Oto",
     description:
       "DSG tamiri, motor revizyonu, kaporta-boya ve daha fazlası. Akhisar'ın VAG uzmanı servisi.",
     url: "https://www.mirac-oto.com/hizmetler",
@@ -38,7 +37,6 @@ function page() {
       />
 
       <Services canShowIntro={false} />
-      <FAQ />
       <CallToAction />
     </div>
   );

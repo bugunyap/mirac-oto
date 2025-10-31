@@ -10,28 +10,32 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-500 bg-white shadow-xl py-3`}
+      className={`fixed top-0 w-full z-50 transition-all duration-500 bg-gray-900 shadow-xl py-3`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link href={"/"}>
             <div className="flex items-center space-x-3">
-              {/* <div className="bg-linear-to-br from-blue-600 to-blue-800 p-3 rounded-xl">
-                <Car className="w-8 h-8 text-white" />
-              </div> */}
               <Image
-                src={"/logo-removebg.png"}
+                src={"/logo-white.png"}
                 width={60}
                 height={60}
                 alt="Logo"
               />
               <div>
-                <div className="font-bold text-2xl text-gray-900">
-                  Miraç Oto
-                </div>
-                <div className="text-sm text-blue-600 font-medium">
+                <div className="font-bold text-2xl text-white">Miraç Oto</div>
+                <div className="text-sm text-white font-medium">
                   Özel Servis
                 </div>
+              </div>
+              <div className="overflow-hidden h-10 w-26 bg-transparent rounded-md">
+                <Image
+                  src="/araba-logolar.png"
+                  width={140}
+                  height={20}
+                  alt="Oto Marka Logoları"
+                  className="object-cover w-full h-full"
+                />
               </div>
             </div>
           </Link>
@@ -43,8 +47,8 @@ function Header() {
                 href={item.href}
                 className={
                   item.href === "/iletisim"
-                    ? "bg-linear-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl hover:shadow-lg transition transform hover:scale-105 font-bold"
-                    : "text-gray-700 hover:text-blue-600 transition font-bold"
+                    ? "bg-linear-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl hover:shadow-lg transition transform hover:scale-105 font-bold"
+                    : "text-gray-200 hover:text-red-500 transition font-bold"
                 }
               >
                 {item.title}
@@ -53,7 +57,7 @@ function Header() {
           </nav>
 
           <button
-            className="lg:hidden text-gray-700 p-2"
+            className="lg:hidden text-white p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -73,8 +77,8 @@ function Header() {
                 onClick={() => setIsMenuOpen(false)}
                 className={
                   item.href === "/iletisim"
-                    ? "block px-4 py-3 bg-blue-600 text-white rounded-lg text-center font-medium"
-                    : "block px-4 py-3 text-gray-700 hover:bg-blue-50 rounded-lg transition"
+                    ? "block px-4 py-3 bg-red-600 text-white rounded-lg text-center font-bold hover:bg-red-700 transition"
+                    : "block px-4 py-3 text-gray-200 hover:bg-gray-800 hover:text-red-500 rounded-lg transition font-medium"
                 }
               >
                 {item.title}

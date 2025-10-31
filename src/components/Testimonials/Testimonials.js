@@ -18,13 +18,13 @@ function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-linear-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition"
+              className="bg-linear-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition"
             >
               <div className="flex items-center mb-6">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover border-4 border-blue-200"
+                  className="w-16 h-16 rounded-full object-cover border-4 border-red-200"
                 />
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-900">

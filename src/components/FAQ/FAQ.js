@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { faqs } from "./faq.helpers";
 
-export default function FAQ() {
+export default function FAQ({
+  className = "bg-linear-to-br from-gray-900 via-gray-800 to-gray-900",
+}) {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -11,14 +13,14 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-20 bg-linear-to-br from-gray-50 to-blue-50">
+    <section className={`py-20 ${className}`}>
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
               Sık Sorulan Sorular
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Müşterilerimizin en sık sorduğu sorular
             </p>
           </div>
@@ -26,7 +28,7 @@ export default function FAQ() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300"
+                className="bg-white hover:bg-gray-100 rounded-xl shadow-md overflow-hidden transition-all duration-300"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
@@ -36,7 +38,7 @@ export default function FAQ() {
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`text-gray-600 transition-transform duration-300 ${
+                    className={`text-gray-600 group-hover:text-red-600 transition-transform duration-300 ${
                       openIndex === index ? "rotate-180" : ""
                     }`}
                   />

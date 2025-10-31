@@ -5,7 +5,7 @@ function Contact({ canShowIntro = true }) {
   return (
     <section
       id="iletisim"
-      className="py-24 bg-linear-to-br from-gray-50 to-blue-50"
+      className="py-24 bg-linear-to-br from-gray-50 to-white"
     >
       <div className="container mx-auto px-4">
         {canShowIntro && (
@@ -25,8 +25,8 @@ function Contact({ canShowIntro = true }) {
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="flex items-start">
-                <div className="bg-blue-100 p-4 rounded-xl">
-                  <MapPin className="w-8 h-8 text-blue-600" />
+                <div className="bg-red-100 p-4 rounded-xl">
+                  <MapPin className="w-8 h-8 text-red-600" />
                 </div>
                 <div className="ml-6">
                   <h3 className="font-bold text-xl mb-2 text-gray-900">
@@ -45,31 +45,37 @@ function Contact({ canShowIntro = true }) {
 
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="flex items-start">
-                <div className="bg-blue-100 p-4 rounded-xl">
-                  <Phone className="w-8 h-8 text-blue-600" />
+                <div className="bg-red-100 p-4 rounded-xl">
+                  <Phone className="w-8 h-8 text-red-600" />
                 </div>
                 <div className="ml-6">
                   <h3 className="font-bold text-xl mb-3 text-gray-900">
-                    Telefon Numaralarımız
+                    İletişim
                   </h3>
                   <div className="space-y-2">
                     <a
                       href="tel:+905359898350"
-                      className="block text-blue-600 hover:text-blue-700 transition text-lg font-medium"
+                      className="block text-red-600 hover:text-red-700 transition text-lg font-medium"
                     >
                       0535 989 8350
                     </a>
                     <a
                       href="tel:+905072964042"
-                      className="block text-blue-600 hover:text-blue-700 transition text-lg font-medium"
+                      className="block text-red-600 hover:text-red-700 transition text-lg font-medium"
                     >
                       0507 296 4042
                     </a>
                     <a
                       href="tel:+905053994619"
-                      className="block text-blue-600 hover:text-blue-700 transition text-lg font-medium"
+                      className="block text-red-600 hover:text-red-700 transition text-lg font-medium"
                     >
                       0505 399 4619
+                    </a>
+                    <a
+                      href="mailto:yunusemreklnc5@gmail.com"
+                      className="block text-red-600 hover:text-red-700 transition text-lg font-medium"
+                    >
+                      yunusemreklnc5@gmail.com
                     </a>
                   </div>
                 </div>
@@ -78,8 +84,8 @@ function Contact({ canShowIntro = true }) {
 
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="flex items-start">
-                <div className="bg-blue-100 p-4 rounded-xl">
-                  <Clock className="w-8 h-8 text-blue-600" />
+                <div className="bg-red-100 p-4 rounded-xl">
+                  <Clock className="w-8 h-8 text-red-600" />
                 </div>
                 <div className="ml-6">
                   <h3 className="font-bold text-xl mb-3 text-gray-900">

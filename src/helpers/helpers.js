@@ -5,6 +5,7 @@ export const services = (Cog, Wrench, Car, Package, Gauge, Stethoscope) => [
     description:
       "Uzman DSG ve otomatik şanzıman teşhis ve onarım hizmetleri. Volkswagen, Audi ve diğer VAG grubu araçlar için özel ekipman.",
     image: "/akhisar-otomobil-servis-sanziman.avif",
+    link: "/hizmetler/akhisar-sanziman-tamir",
   },
   {
     icon: Wrench,
@@ -12,6 +13,7 @@ export const services = (Cog, Wrench, Car, Package, Gauge, Stethoscope) => [
     description:
       "Motor revizyonu, yağ değişimi, triger kayışı ve periyodik bakım hizmetleri. Tüm motor arızalarında uzman çözüm.",
     image: "/akhisar-otomobil-servis-tamir.avif",
+    link: "/hizmetler/akhisar-motor-mekanik-tamir",
   },
   {
     icon: Car,
@@ -19,6 +21,7 @@ export const services = (Cog, Wrench, Car, Package, Gauge, Stethoscope) => [
     description:
       "Boyasız göçük düzeltme teknolojisi ile aracınızın orijinal görünümünü koruyarak hasarları gideriyoruz.",
     image: "/akhisar-otomobil-servis-gocuk.avif",
+    link: "/hizmetler/akhisar-otomobil-servis-gocuk",
   },
   {
     icon: Package,
@@ -26,6 +29,7 @@ export const services = (Cog, Wrench, Car, Package, Gauge, Stethoscope) => [
     description:
       "Profesyonel kaporta onarımı ve fırın boya sistemleri ile kusursuz yüzey kalitesi sağlıyoruz.",
     image: "/akhisar-otomobil-servis-kaporta-2.avif",
+    link: "/hizmetler/akhisar-kaporta-boya",
   },
   {
     icon: Gauge,
@@ -33,6 +37,7 @@ export const services = (Cog, Wrench, Car, Package, Gauge, Stethoscope) => [
     description:
       "Orijinal OEM ve kaliteli yan sanayi yedek parçalar. Volkswagen, Audi, Seat, Skoda için geniş stok ağı.",
     image: "/akhisar-otomobil-servis-yedek-parca.avif",
+    link: "/hizmetler/akhisar-yedek-parca",
   },
   {
     icon: Stethoscope,
@@ -40,6 +45,7 @@ export const services = (Cog, Wrench, Car, Package, Gauge, Stethoscope) => [
     description:
       "VCDS ve ODIS profesyonel teşhis ekipmanları ile aracınızın tüm sistemlerini detaylı olarak kontrol ediyoruz.",
     image: "/akhisar-otomobil-servis-teshis.avif",
+    link: "/hizmetler/akhisar-vag-grup-teshis",
   },
 ];
 
@@ -105,6 +111,10 @@ export const navItems = [
     href: "/hakkimizda",
   },
   {
+    title: "Galeri",
+    href: "/galeri",
+  },
+  {
     title: "Hizmetler",
     href: "/hizmetler",
   },
@@ -112,4 +122,27 @@ export const navItems = [
     title: "İletişim",
     href: "/iletisim",
   },
+];
+
+export const photoGalleryItems = [
+  "/mirac-oto-1.jpeg",
+  "/mirac-oto-2.jpeg",
+  "/mirac-oto-3.jpeg",
+  "/mirac-oto-4.jpeg",
+  "/mirac-oto-5.jpeg",
+  "/mirac-oto-6.jpeg",
+  "/mirac-oto-7.jpeg",
+  "/mirac-oto-8.jpeg",
+  "/mirac-oto-9.jpeg",
+  "/mirac-oto-10.jpeg",
+  "/mirac-oto-11.jpeg",
+  "/mirac-oto-12.jpeg",
+  "/mirac-oto-13.jpeg",
+  "/mirac-oto-14.jpeg",
+  "/mirac-oto-15.jpeg",
+  "/mirac-oto-16.jpeg",
+  "/mirac-oto-17.jpeg",
+  "/mirac-oto-18.jpeg",
+  "/mirac-oto-19.jpeg",
+  "/mirac-oto-20.jpeg",
 ];
