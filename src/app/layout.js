@@ -15,12 +15,56 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  title: "Akhisar Oto Tamir ve Bakım Servisi | Miraç Oto",
+  description:
+    "Miraç Oto Özel Servis, Akhisar'da VAG Grubu araçlara (Volkswagen, Audi, Seat, Skoda) profesyonel tamir, bakım ve onarım hizmeti sunar. Şanzıman, motor, kaporta ve göçük düzeltme servisleriyle hizmetinizde.",
+  keywords: [
+    "Akhisar oto tamir",
+    "Akhisar tamirci",
+    "Akhisar özel servis",
+    "Akhisar oto bakım",
+    "Miraç Oto",
+    "Akhisar VAG servis",
+    "Akhisar Volkswagen servis",
+    "Akhisar Audi servis",
+    "Akhisar Seat servis",
+    "Akhisar Skoda servis",
+    "Akhisar DSG tamiri",
+  ],
+  authors: [{ name: "Miraç Oto Özel Servis" }],
+  creator: "Miraç Oto",
+  publisher: "Miraç Oto Özel Servis",
+  metadataBase: new URL("https://www.mirac-oto.com"),
+  openGraph: {
+    title: "Miraç Oto Özel Servis | Akhisar Oto Tamir ve Bakım",
+    description:
+      "Akhisar'da VAG Grubu araçlara özel profesyonel tamir ve bakım hizmetleri. DSG şanzıman, motor onarımı, kaporta ve göçük düzeltme servisi.",
+    url: "https://www.mirac-oto.com",
+    siteName: "Miraç Oto Özel Servis",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Miraç Oto Özel Servis Akhisar",
+      },
+    ],
+    locale: "tr_TR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Akhisar Oto Tamir ve Bakım | Miraç Oto Özel Servis",
+    description:
+      "Akhisar'da Volkswagen, Audi, Seat ve Skoda araçlar için profesyonel özel servis hizmeti.",
+    images: ["/logo.png"],
+  },
   icons: {
     icon: [
       { url: "/favicon.ico" },
-      { url: "/logo-white.png", type: "image/png", sizes: "512x512" },
+      { url: "/logo.png", type: "image/png", sizes: "512x512" },
     ],
-    apple: "/logo-white.png",
+    apple: "/logo.png",
   },
 };
 
@@ -28,13 +72,15 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://www.mirac-oto.com/#organization",
     name: "Miraç Oto Özel Servis",
-    image: "https://www.mirac-oto.com/logo.jpg",
+    image: "https://www.mirac-oto.com/logo.png",
     description:
-      "Akhisar'da VAG grubu araçlar için özel servis. Volkswagen, Audi, Seat, Skoda tamir, bakım ve teşhis hizmetleri.",
+      "Akhisar oto tamir ve bakım merkezi. Miraç Oto, tüm marka araçlarda motor, şanzıman, kaporta ve boyasız göçük düzeltme hizmetleri sunar.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Hacı İshak Mahallesi",
+      streetAddress:
+        "Hacı İshak Mahallesi Nuri Giyik Sanayi Sitesi 31. Blok, Küme Evler No:12/7",
       addressLocality: "Akhisar",
       addressRegion: "Manisa",
       postalCode: "45200",
@@ -42,8 +88,8 @@ export default function RootLayout({ children }) {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "38.9187",
-      longitude: "27.8370",
+      latitude: "38.90393",
+      longitude: "27.83807",
     },
     telephone: ["+905359898350", "+905072964042", "+905053994619"],
     openingHoursSpecification: [
@@ -75,8 +121,8 @@ export default function RootLayout({ children }) {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "DSG Şanzıman Tamiri",
-            description: "Volkswagen, Audi DSG şanzıman onarımı",
+            name: "Şanzıman Tamiri",
+            description: "Volkswagen, Audi şanzıman onarımı",
           },
         },
         {
@@ -95,17 +141,30 @@ export default function RootLayout({ children }) {
             description: "VCDS ve ODIS ile profesyonel teşhis",
           },
         },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Kaporta & Boya",
+            description:
+              "Profesyonel kaporta, boya ve lokal onarım hizmetleri.",
+          },
+        },
       ],
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "250",
+      ratingValue: "5",
+      reviewCount: "11",
     },
+    sameAs: [
+      "https://www.instagram.com/miracozelservis/",
+      "https://maps.app.goo.gl/wwLDepWzLa4LaPLP8",
+    ],
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="tr" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
