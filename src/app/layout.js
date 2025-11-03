@@ -3,6 +3,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -172,6 +173,18 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17042330996"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17042330996');
+          `}
+        </Script>
         <Header />
         {children}
         <Footer />
